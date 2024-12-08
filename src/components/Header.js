@@ -5,18 +5,34 @@ import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { setLang } from "../slices/langSlice";
 
 const Header = () => {
+   const lang = useSelector((state) => state.lang.value);
+   const dispatch = useDispatch();
+   useEffect(() => {
+      let lang = localStorage.getItem("lang");
+      if (!lang) {
+         localStorage.setItem("lang", "en");
+         lang = "en";
+         dispatch(setLang(lang));
+      } else {
+         dispatch(setLang(lang));
+      }
+   }, []);
+   const changeLang = (lang) => {
+      dispatch(setLang(lang));
+      localStorage.setItem("lang", lang);
+   };
    const pathname = useLocation();
    const [openNavigation, setOpenNavigation] = useState(false);
 
    const handlePageScrolling = (overlay, position) => {
-      document.html.style.position = position;
       document.body.style.position = position;
-      document.html.style.overflow = overlay;
       document.body.style.overflow = overlay;
-   }
+   };
 
    const toggleNavigation = () => {
       if (openNavigation) {
@@ -30,7 +46,6 @@ const Header = () => {
 
    const handleClick = () => {
       if (!openNavigation) return;
-
       handlePageScrolling("", "");
       setOpenNavigation(false);
    };
@@ -65,9 +80,18 @@ const Header = () => {
                               : "lg:text-n-1/50"
                         } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
                      >
-                        {item.title}
+                        {lang === "en" ? item.title : item.title_ar}
                      </a>
                   ))}
+                  <a
+                     href="#home"
+                     onClick={() =>
+                        changeLang(lang === "ar" ? "en" : "ar")
+                     }
+                     className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold`}
+                  >
+                     {lang === "ar" ? "EN" : "AR"}
+                  </a>
                </div>
 
                <HamburgerMenu />
@@ -77,10 +101,10 @@ const Header = () => {
                href="#signup"
                className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
             >
-               New account
+               {lang === "en" ? "New account" : "حساب جديد"}
             </a>
             <Button className="hidden lg:flex" href="#login">
-               Sign in
+               {lang === "en" ? "Sign in" : "تسجيل الدخول"}
             </Button>
 
             <Button

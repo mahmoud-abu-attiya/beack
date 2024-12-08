@@ -1,86 +1,26 @@
 import ButtonGradient from "./assets/svg/ButtonGradient"
+import Benefits from "./components/Benefits"
 import Button from "./components/Button"
+import Collaboration from "./components/Collaboration"
+import Footer from "./components/Footer"
 import Header from "./components/Header"
+import Hero from "./components/Hero"
+import Pricing from "./components/Pricing"
+import Roadmap from "./components/Roadmap"
+import Services from "./components/Services"
 
 export default function App() {
   return (
     <>
     <div className="pt-[4] lg:pt-[5.25rem] overflow-hidden">
       <Header />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio qui consequatur culpa totam omnis unde iure similique a aut, porro tempore veniam! Dolorum porro culpa cumque animi molestiae laborum?</p>
+      <Hero />
+      <Benefits />
+      <Collaboration />
+      <Services />
+      <Pricing />
+      <Roadmap />
+      <Footer />
     </div>
     <ButtonGradient />
     </>
