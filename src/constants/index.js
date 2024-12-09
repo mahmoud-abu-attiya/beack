@@ -41,38 +41,38 @@ export const navigation = [
       id: "0",
       title: "Features",
       title_ar: "سمات",
-      url: "#features",
+      url: "/services",
    },
    {
       id: "1",
       title_ar: "التسعير",
       title: "Pricing",
-      url: "#pricing",
+      url: "/pricing",
    },
    {
       id: "2",
       title_ar: "كيفية الاستخدام",
       title: "How to use",
-      url: "#how-to-use",
+      url: "/collaboration",
    },
    {
       id: "3",
       title_ar: "خريطة الطريق",
       title: "Roadmap",
-      url: "#roadmap",
+      url: "/roadmap",
    },
    {
       id: "4",
       title_ar: "حساب جديد",
       title: "New account",
-      url: "#signup",
+      url: "/signup",
       onlyMobile: true,
    },
    {
       id: "5",
       title_ar: "تسجيل الدخول",
       title: "Sign in",
-      url: "#login",
+      url: "/login",
       onlyMobile: true,
    },
 ];
@@ -84,9 +84,18 @@ export const notificationImages = [notification4, notification3, notification2];
 export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
 export const brainwaveServices = [
-   "Photo generating",
-   "Photo enhance",
-   "Seamless Integration",
+   { 
+      en: "Photo generating",
+      ar: "توليد الصور"
+   },
+   { 
+      en: "Photo enhance",
+      ar: "تحسين الصورة"
+   },
+   { 
+      en: "Seamless Integration",
+      ar: "التكامل السلس"
+   },
 ];
 
 export const brainwaveServicesIcons = [
@@ -116,7 +125,7 @@ export const roadmap = [
       title_ar: "اللعبيّة",
       text_ar:
          "أضف عناصر تشبه تلك الموجودة في الألعاب، مثل الشارات أو لوحات المتصدرين، لتشجيع المستخدمين على التفاعل مع برنامج المحادثة الآلي بشكل متكرر.",
-      text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more أضف عناصر تشبه تلك الموجودة في الألعاب، مثل الشارات أو لوحات المتصدرين، لتشجيع المستخدمين على التفاعل مع برنامج المحادثة الآلي بشكل متكرر.frequently.",
+      text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
       date: "May 2023",
       status: "progress",
       imageUrl: roadmap2,

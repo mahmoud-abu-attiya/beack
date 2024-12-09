@@ -8,16 +8,18 @@ import {
   VideoBar,
   VideoChatMessage,
 } from "./design/Services";
+import { useSelector } from "react-redux";
 
 import Generating from "./Generating";
 
 const Services = () => {
+  const lang = useSelector((state) => state.lang.value)
   return (
     <Section id="how-to-use">
       <div className="container">
         <Heading
-          title="Generative AI made for creators."
-          text="Brainwave unlocks the potential of AI-powered applications"
+          title={lang === "en" ? "Generative AI made for creators." : "الذكاء الاصطناعي التوليدي المصمم للمبدعين."}
+          text={lang === "en" ? "Brainwave unlocks the potential of AI-powered applications" : "Brainwave يطلق العنان لإمكانات التطبيقات التي تعمل بالذكاء الاصطناعي"}
         />
 
         <div className="relative">
@@ -33,9 +35,9 @@ const Services = () => {
             </div>
 
             <div className="relative z-1 max-w-[17rem] ml-auto">
-              <h4 className="h4 mb-4">Smartest AI</h4>
+              <h4 className="h4 mb-4">{lang === "en" ? "Smartest AI" : "أذكى الذكاء الاصطناعي"}</h4>
               <p className="body-2 mb-[3rem] text-n-3">
-                Brainwave unlocks the potential of AI-powered applications
+                {lang === "en" ? "Brainwave unlocks the potential of AI-powered applications" : "Brainwave يطلق العنان لإمكانات التطبيقات التي تعمل بالذكاء الاصطناعي"}
               </p>
               <ul className="body-2">
                 {brainwaveServices.map((item, index) => (
@@ -44,13 +46,13 @@ const Services = () => {
                     className="flex items-start py-4 border-t border-n-6"
                   >
                     <img width={24} height={24} src={check} />
-                    <p className="ml-4">{item}</p>
+                    <p className="ltr:ml-4 rtl:mr-4">{lang === "en" ? item.en : item.ar}</p>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <Generating className="absolute left-4 right-4 bottom-4 border-n-1/10 border lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-1/2" />
+            <Generating lang={lang} className="absolute left-4 right-4 bottom-4 border-n-1/10 border lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-1/2" />
           </div>
 
           <div className="relative z-1 grid gap-5 lg:grid-cols-2">
@@ -66,10 +68,9 @@ const Services = () => {
               </div>
 
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
-                <h4 className="h4 mb-4">Photo editing</h4>
+                <h4 className="h4 mb-4">{lang === "en" ? "Photo editing" : "تحرير الصور"}</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                  Automatically enhance your photos using our AI app&apos;s
-                  photo editing feature. Try it now!
+                  {lang === "en" ? "Automatically enhance your photos using our AI apps photo editing feature. Try it now!" : "قم بتحسين صورك تلقائيًا باستخدام ميزة تحرير الصور في تطبيقات الذكاء الاصطناعي لدينا. جربها الآن!"}
                 </p>
               </div>
 
@@ -78,10 +79,9 @@ const Services = () => {
 
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <div className="py-12 px-4 xl:px-8">
-                <h4 className="h4 mb-4">Video generation</h4>
+                <h4 className="h4 mb-4">{lang === "en" ? "Video generation" : "توليد الفيديو"}</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
-                  The world’s most powerful AI photo and video art generation
-                  engine. What will you create?
+                  {lang === "en" ? "The world’s most powerful AI photo and video art generation engine. What will you create?" : "أقوى محرك ذكاء اصطناعي في العالم لإنشاء صور وفيديوهات فنية. ماذا ستبدع؟"}
                 </p>
 
                 <ul className="flex items-center justify-between">
@@ -117,8 +117,8 @@ const Services = () => {
                   alt="Scary robot"
                 />
 
-                <VideoChatMessage />
-                <VideoBar />
+                <VideoChatMessage lang={lang} />
+                <VideoBar lang={lang} />
               </div>
             </div>
           </div>

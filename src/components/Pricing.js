@@ -3,8 +3,10 @@ import { smallSphere, stars } from "../assets";
 import Heading from "./Heading";
 import PricingList from "./PricingList";
 import { LeftLine, RightLine } from "./design/Pricing";
+import { useSelector } from "react-redux";
 
 const Pricing = () => {
+  const lang = useSelector((state) => state.lang.value)
   return (
     <Section className="overflow-hidden" id="pricing">
       <div className="container relative z-2">
@@ -28,8 +30,8 @@ const Pricing = () => {
         </div>
 
         <Heading
-          tag="Get started with Brainwave"
-          title="Pay once, use forever"
+          tag={lang === "en" ? "Get started with Brainwave" : "ابدأ مع Brainwave"}
+          title={lang === "en" ? "Pay once, use forever" : "ادفع مرة واحدة واستخدم للأبد"}
         />
 
         <div className="relative">
@@ -43,7 +45,7 @@ const Pricing = () => {
             className="text-xs font-code font-bold tracking-wider uppercase border-b"
             href="/pricing"
           >
-            See the full details
+            {lang === "en" ? "See the full details" : "شاهد التفاصيل الكاملة"}
           </a>
         </div>
       </div>

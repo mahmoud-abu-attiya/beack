@@ -1,6 +1,5 @@
-import { useState , useEffect } from "react";
 import { brainwaveSymbol, check } from "../assets";
-import { collabApps, collabContent, collabText } from "../constants";
+import { collabApps, collabContent } from "../constants";
 import Button from "./Button";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
@@ -21,7 +20,7 @@ const Collaboration = () => {
               <li className="mb-3 py-3" key={item.id}>
                 <div className="flex items-center">
                   <img src={check} width={24} height={24} alt="check" />
-                  <h6 className="body-2 ml-5">{lang === "en" ? item.title : item.title_ar}</h6>
+                  <h6 className="body-2 ltr:ml-5 rtl:mr-5">{lang === "en" ? item.title : item.title_ar}</h6>
                 </div>
                 {item.text && (
                   <p className="body-2 mt-3 text-n-4">{lang === "en" ? item.text : item.text_ar}</p>
@@ -33,12 +32,12 @@ const Collaboration = () => {
           <Button>{lang === "en" ? "Try it now" : "جربها الآن"}</Button>
         </div>
 
-        <div className="lg:ml-auto xl:w-[38rem] mt-4">
+        <div className="ltr:lg:ml-auto rtl:lg:mr-auto xl:w-[38rem] mt-4">
           <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
             {lang === "en" ? "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter." : "بفضل الأتمتة الذكية والأمان من الدرجة الأولى، يعد هذا هو الحل الأمثل للفرق التي تتطلع إلى العمل بشكل أكثر ذكاءً."}
           </p>
 
-          <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
+          <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full rtl:-translate-x-full ltr:-translate-x-1/2 scale:75 md:scale-100">
             <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
               <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">

@@ -26,6 +26,7 @@ const Hero = () => {
             <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
                <h1 className="h1 mb-6">
                   {lang === "en" ? "Explore the Possibilities of AI Chatting with" : "استكشف إمكانيات الدردشة باستخدام الذكاء الاصطناعي"}
+                  {" "}
                   <span className="inline-block relative">
                      Brainwave{" "}
                      <img
@@ -78,7 +79,8 @@ const Hero = () => {
                         <ScrollParallax isAbsolutelyPositioned>
                            <Notification
                               className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
-                              title="Code generation"
+                              title={lang === "en" ? "Code generation": "توليد الكود"}
+                              lang={lang}
                            />
                         </ScrollParallax>
                      </div>

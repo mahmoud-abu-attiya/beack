@@ -5,11 +5,14 @@ import Tagline from "./Tagline";
 import { roadmap } from "../constants";
 import { check2, grid, loading1 } from "../assets";
 import { Gradient } from "./design/Roadmap";
+import { useSelector } from "react-redux";
 
-const Roadmap = () => (
+const Roadmap = () => {
+  const lang = useSelector((state) => state.lang.value)
+  return (
   <Section className="overflow-hidden" id="roadmap">
     <div className="container md:pb-10">
-      <Heading tag="Ready to get started" title="What we’re working on" />
+      <Heading tag={lang === "en" ? "Ready to get started" : "جاهز للبدء"} title={lang === "en" ? "What we’re working on" : "ما الذي نعمل عليه"} />
 
       <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
         {roadmap.map((item) => {
@@ -57,8 +60,8 @@ const Roadmap = () => (
                       alt={item.title}
                     />
                   </div>
-                  <h4 className="h4 mb-4">{item.title}</h4>
-                  <p className="body-2 text-n-4">{item.text}</p>
+                  <h4 className="h4 mb-4">{lang === "en" ? item.title : item.title_ar}</h4>
+                  <p className="body-2 text-n-4">{lang === "en" ? item.text : item.text_ar}</p>
                 </div>
               </div>
             </div>
@@ -69,10 +72,10 @@ const Roadmap = () => (
       </div>
 
       <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
-        <Button href="/roadmap">Our roadmap</Button>
+        <Button href="/roadmap">{lang === "en" ? "Our roadmap" : "خريطة الطريق الخاصة بنا"}</Button>
       </div>
     </div>
   </Section>
-);
+)};
 
 export default Roadmap;

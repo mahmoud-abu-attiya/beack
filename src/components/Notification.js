@@ -1,7 +1,7 @@
 import { notification1 } from "../assets";
 import { notificationImages } from "../constants";
 
-const Notification = ({ className, title }) => {
+const Notification = ({ className, title, lang }) => {
   return (
     <div
       className={`${
@@ -36,7 +36,7 @@ const Notification = ({ className, title }) => {
               </li>
             ))}
           </ul>
-          <div className="body-2 text-n-13">1m ago</div>
+          <div className="body-2 text-n-13">{lang === "en" ? "1m ago" : "منذ 1 دقيقة"}</div>
         </div>
       </div>
     </div>

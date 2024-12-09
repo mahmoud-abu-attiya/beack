@@ -31,10 +31,10 @@ const PricingList = () => {
 
           <Button
             className="w-full mb-6"
-            href={item.price ? "/pricing" : "mailto:contact@jsmastery.pro"}
-            white={!!item.price}
+            href={"/pricing"}
+            white={true}
           >
-            {item.price ? "Get started" : "Contact us"}
+            {lang === "en" ? "Get started" : "ابدأ"}
           </Button>
 
           <ul>
@@ -44,7 +44,7 @@ const PricingList = () => {
                 className="flex items-start py-5 border-t border-n-6"
               >
                 <img src={check} width={24} height={24} alt="Check" />
-                <p className="body-2 ml-4">{lang === "en" ? feature.en : feature.ar}</p>
+                <p className="body-2 ltr:ml-4 rtl:mr-4">{lang === "en" ? feature.en : feature.ar}</p>
               </li>
             ))}
           </ul>

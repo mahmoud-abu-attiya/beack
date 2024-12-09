@@ -7,13 +7,17 @@ import ClipPath from "../assets/svg/ClipPath";
 import { useSelector } from "react-redux";
 
 const Benefits = () => {
-   const lang = useSelector((state) => state.lang.value)
+   const lang = useSelector((state) => state.lang.value);
    return (
       <Section id="features">
          <div className="container relative z-2">
             <Heading
                className="md:max-w-md lg:max-w-2xl"
-         	   title={lang === "en" ? "Chat Smarter, Not Harder with Brainwave" : "الدردشة بشكل أذكى وليس أصعب مع Brainwave"}
+               title={
+                  lang === "en"
+                     ? "Chat Smarter, Not Harder with Brainwave"
+                     : "الدردشة بشكل أذكى وليس أصعب مع Brainwave"
+               }
             />
 
             <div className="flex flex-wrap gap-10 mb-10">
@@ -26,8 +30,12 @@ const Benefits = () => {
                      key={item.id}
                   >
                      <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
-                        <h5 className="h5 mb-5">{lang === "en" ? item.title : item.title_ar}</h5>
-                        <p className="body-2 mb-6 text-n-3">{lang === "en" ? item.text : item.text_ar}</p>
+                        <h5 className="h5 mb-5">
+                           {lang === "en" ? item.title : item.title_ar}
+                        </h5>
+                        <p className="body-2 mb-6 text-n-3">
+                           {lang === "en" ? item.text : item.text_ar}
+                        </p>
                         <div className="flex items-center mt-auto justify-between">
                            <img
                               src={item.iconUrl}
@@ -37,9 +45,13 @@ const Benefits = () => {
                            />
                            <a href="#home" className="flex items-center">
                               <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
-                                 {lang === "en" ? "Explore more" : "اكتشف المزيد"}
+                                 {lang === "en"
+                                    ? "Explore more"
+                                    : "اكتشف المزيد"}
                               </p>
-                              <Arrow />
+                              <div className="rotate-180">
+                                 <Arrow />
+                              </div>
                            </a>
                         </div>
                      </div>

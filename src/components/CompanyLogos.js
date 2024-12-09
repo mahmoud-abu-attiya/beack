@@ -1,10 +1,12 @@
 import { companyLogos } from "../constants";
+import { useSelector } from "react-redux";
 
 const CompanyLogos = ({ className }) => {
+  const lang = useSelector((state) => state.lang.value)
   return (
     <div className={className}>
       <h5 className="tagline mb-6 text-center text-n-1/50">
-        Helping people create beautiful content at
+      {lang === "en" ? "Helping people create beautiful content at" : "مساعدة الأشخاص على إنشاء محتوى جميل في"}
       </h5>
       <ul className="flex">
         {companyLogos.map((logo, index) => (
